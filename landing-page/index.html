@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canada's Cupcakes</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Canada's Cupcakes </h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="About Us" class="your-active-class">
+      <div class="landing__container">
+        <h2>About Us</h2>
+        <p>We are a world-class edible creation company based in Toronto, Canada. Boasting over 50 years of baking experience
+          between all our team members, we pride ourselves on combining the best ingredients and innovative design to create
+          the ultimate baked goods for our clients.
+        </p>
+      </div>
+    </section>
+    <section id="section2" data-nav="Our Products">
+      <div class="landing__container">
+        <h2 id="product-header">Our Products</h2>
+        <ul id="products">
+          <li class="product"><img src="img/cupcake.png" alt="cupcake" id="cupcake">Cupcakes</li>
+          <li class="product"><img src="img/cake.png" alt="cake" id="cake">Cakes</li>
+          <li class="product"><img src="img/cookies.png" alt="cookie" id="cookie">Cookies</li>
+        </ul>
+      </div>
+    </section>
+    <section id="section3" data-nav="Testimonials">
+      <div class="landing__container">
+        <h2>Testimonials</h2>
+        <p><q>Best Cookies I've Ever Had</q> -Sam Smith</p>
+        <p><q>Made The Most Beautiful Cake I've Ever Seen For My Mother's 80th Birthday</q> -Adele</p>
+        <p><q>Ordered A Set Of Custom Cupcakes And The Cupcake Design Team Perfectly Created What I Envisioned, 10/10
+        </q> -Bob Marley</p>
+      </div>
+    </section>
+    <section id="section4" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact</h2>
+        <p>Phone: 1-800-385-1038</p>
+        <p>Email: contact@canadascupcakes.com</p>
+        <p>Address: 50 Bloor Street, Toronto, Canada</p>
+        <p>Postal Code: L4M 8P4</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Richard La</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
